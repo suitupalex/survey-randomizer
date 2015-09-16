@@ -1,0 +1,145 @@
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@media all {
+  #_sr {
+    transition: opacity 0.5s;
+    animation: fadeIn 0.25s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.25);
+
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
+    &._sr {
+      &-hidden {
+        opacity: 0
+      }
+    }
+
+    ._sr {
+      &-input[type='radio'] {
+        margin-right: 0.5em;
+        display: none;
+
+        &:checked + label {
+          background-color: #e91e63;
+
+          &:hover {
+            background-color: #ec407a;
+          }
+
+          &:active {
+            background-color: #d81b60;
+          }
+        }
+
+        &:disabled + label {
+          background-color: rgba(0,0,0,0.2);
+        }
+      }
+
+      &-label {
+        display: block;
+        padding: 1em;
+        background-color: #303f9f;
+        margin: 1em 0;
+        border-radius: 0.25em;
+        cursor: pointer;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        transition: background-color 0.25s;
+
+        &:hover {
+          background-color: #3949ab;
+        }
+
+        &:active {
+          background-color: #283593;
+        }
+      }
+    }
+
+    #_sr {
+      &-vertical {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
+
+      &-content {
+        width: 100%;
+        max-width: 30em;
+        display: inline-block;
+        padding: 2em;
+        background-color: #3f51b5;
+        color: #fff;
+        box-shadow: 0 0.2em 0.5em rgba(0,0,0,0.25);
+        box-sizing: border-box;
+      }
+
+      &-prompt {
+        margin-top: 0;
+        color: #fff;
+      }
+
+      &-submit {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        border-radius: 0.25em;
+        background-color: #64dd17;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.25s;
+
+        &:hover {
+          background-color: #76ff03;
+        }
+
+        &:active {
+          background-color: #33691e;
+        }
+
+        &:disabled {
+          background-color: rgba(0,0,0,0.2);
+        }
+      }
+
+      &-exit {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        margin-top: 1em;
+        color: #fff;
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.25);
+        border-radius: 0.25em;
+        text-transform: uppercase;
+        font-size: 0.7em;
+
+        &:hover {
+          background-color: rgba(255,255,255,0.35);
+        }
+
+        &:active {
+          background-color: rgba(255,255,255,0.15);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+@media all {
+  #_sr {
+    font-size: 16px;
+    position: fixed !important;
+    z-index: 10000;
+    /* START INTERNAL CSS RESET */
+    // Based on Eric Meyer's "Reset CSS" 2.0 and Normalize.css 1.0
+    ._sr {
+      &-div, &-span,
+      &-h1, &-h2, &-h3, &-h4, &-h5
+      &-i, &-b, &-a,
+      &-p,
+      &-img,
+      &-header, &-article, &-footer, &-section,
+      &-input, &-select, &-textarea {
+        float: none;
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        height: auto;
+        width: auto;
+        font: {
+          size: 16px;
+          family: sans-serif;
+          stretch: normal;
+          style: normal;
+          weight: normal;
+          variant: normal;
+        };
+        letter-spacing: normal;
+        line-height: normal;
+        cursor: auto;
+        background: {
+          color: transparent;
+          attachment: scroll;
+          clip: border-box;
+          image: none;
+          origin: padding-box;
+          size: auto;
+        };
+        color: black;
+        border: none;
+        border: {
+          top: {
+            color: transparent;
+            left-radius: 0;
+            right-radius: 0;
+            style: none;
+            width: 0;
+          };
+          right: {
+            color: transparent;
+            style: none;
+            width: 0;
+          };
+          bottom: {
+            color: transparent;
+            left-radius: 0;
+            right-radius: 0;
+            style: none;
+            width: 0;
+          };
+          left: {
+            color: transparent;
+            style: none;
+            width: 0;
+          };
+        };
+        outline: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        text: {
+          align: left;
+          shadow: none;
+          transform: none;
+        };
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition-delay: 0;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        transition-property: none;
+        -webkit-transition-property: none;
+        -moz-transition-property: none;
+        transition-duration: 0;
+        -webkit-transition-duration: 0;
+        -moz-transition-duration: 0;
+      }
+      &-div, &-span,
+      &-h1, &-h2, &-h3,
+      &-i, &-b, &-a,
+      &-p,
+      &-img,
+      &-header, &-article, &-footer, &-section {
+        margin: 0;
+        padding: 0;
+        margin: {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        };
+        padding: {
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        };
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        background: transparent;
+      }
+      &-header, &-article, &-footer, &-section {
+        display: block;
+      }
+      &-input, &-select {
+        vertical-align: middle;
+        &:active {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      &-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+      }
+      &-h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+      &-h2 {
+        font-size: 1.5em;
+        margin: 0.83em 0;
+      }
+      &-h3 {
+        font-size: 1.17em;
+        margin: 1em 0;
+      }
+      &-b {
+        font-weight: bold;
+      }
+      &-p {
+        margin: 0;
+      }
+      &-ul {
+        list-style-type: none;
+      }
+      &-ul, &-li {
+        margin: 0;
+        padding: 0;
+      }
+      &-img {
+        border: 0;
+      }
+      &-form {
+        margin: 0;
+      }
+      &-button, &-input, &-select, &-textarea {
+        font-size: 100%;
+        margin: 0;
+        vertical-align: baseline;
+        *vertical-align: middle;
+      }
+      &-button, &-input {
+        line-height: normal;
+        &[disabled] {
+          cursor: default;
+        }
+        &::-moz-focus-inner {
+          border: 0;
+          padding: 0;
+        }
+      }
+      &-button {
+        border: 0;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        cursor: pointer;
+      }
+      &-button, &-input[type='submit'] {
+        text-align: center;
+        background-image: none;
+        height: auto;
+      }
+      &-input {
+        &[type='button'], &[type='reset'], &[type='submit'] {
+          -webkit-appearance: button;
+          -moz-appearance: button;
+          cursor: pointer;
+        }
+        &[type='checkbox'], &[type='radio'] {
+          box-sizing: border-box;
+          padding: 0;
+          *height: 13px;
+          *width: 13px;
+        }
+      }
+      &-textarea {
+        overflow: auto;
+        vertical-align: top;
+      }
+    }
+    /* END INTERNAL CSS RESET */
+  }
+}
+

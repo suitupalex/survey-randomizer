@@ -1,0 +1,9 @@
+.material-icons {
+  left: -7em;
+  width: 1em;
+}
+
+input[type=text]:focus:not([readonly]) {
+  border-bottom: none;
+  box-shadow: none
+}

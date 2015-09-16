@@ -29,10 +29,13 @@ module.exports = {
 , resolveLoader: {
     root: path.join(__dirname, 'node_modules')
  }
-, entry: './frontend/Base.jsx'
+, entry: {
+  base: './frontend/Base.jsx'
+, plugin: './frontend/plugin/plugin.js'
+}
 , output: {
-    path: './frontend'
-  , filename: 'base.bundle.js'
+    path: './dist'
+  , filename: '[name].bundle.js'
   }
 , plugins: [processEnvPlugin]
 }

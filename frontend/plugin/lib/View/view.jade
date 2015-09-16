@@ -1,0 +1,18 @@
+- var model = this.model
+
+._sr-div#_sr
+  ._sr-div#_sr-vertical
+    section._sr-section#_sr-content
+      form._sr-form#_sr-form
+        h3._sr-h3#_sr-prompt=model.prompt
+        - var length = model.answers.length
+        - for (var i = 0; i < length; i++)
+          input._sr-input(
+            id='_sr-answer-' + i
+            type='radio'
+            name='answer'
+            value=model.answers[i].id
+          )
+          label._sr-label(for='_sr-answer-' + i)=model.answers[i].text
+        input._sr-submit#_sr-submit(type='submit')
+      a._sr-a#_sr-exit=model.strings.exit

@@ -11,7 +11,9 @@ const url = require('url')
 const NAME = 'Backend/Endpoints'
 
 const PATH_FRONTEND = path.join(__dirname, '..', '..', 'frontend')
-const PATH_BASE_JS = path.join(PATH_FRONTEND, 'base.bundle.js')
+const PATH_DIST = path.join(__dirname, '..', '..', 'dist')
+const PATH_BASE_JS = path.join(PATH_DIST, 'base.bundle.js')
+const PATH_PLUGIN_JS = path.join(PATH_DIST, 'plugin.bundle.js')
 const PATH_BASE = path.join(PATH_FRONTEND, 'base.jade')
 
 describe(NAME, function describeEndpoints() {
@@ -34,7 +36,7 @@ describe(NAME, function describeEndpoints() {
   })
 
   it('should request "/"', function checkRoot(done) {
-    request(url.resolve(address, '/'), function rootResponse(error, resonse, body) {
+    request(url.resolve(address, '/'), function rootResponse(error, response, body) {
       if (error) {
         return done(error)
       }
@@ -46,12 +48,30 @@ describe(NAME, function describeEndpoints() {
   })
 
   it('should request "/base.js"', function checkBaseJs(done) {
-    request(url.resolve(address, '/base.js'), function baseJsResponse(error, resonse, body) {
+    request(url.resolve(address, '/base.js'), function baseJsResponse(error, response, body) {
       if (error) {
         return done(error)
       }
 
       fs.readFile(PATH_BASE_JS, function readBaseJs(error, data) {
+        if (error) {
+          return done(error)
+        }
+
+        assert.equal(body, data)
+
+        done()
+      })
+    })
+  })
+
+  it('should request "/v1/plugin.js"', function checkPluginJs(done) {
+    request(url.resolve(address, '/v1/plugin.js'), function pluginJsResponse(error, response, body) {
+      if (error) {
+        return done(error)
+      }
+
+      fs.readFile(PATH_PLUGIN_JS, function readPluginJs(error, data) {
         if (error) {
           return done(error)
         }

@@ -5,14 +5,11 @@
   "main": "backend/server.js",
   "scripts": {
     "build": "./scripts/build",
-
     "prestart": "npm run build",
     "start": "./scripts/start",
-
     "pretest": "npm run build",
     "test": "./scripts/test",
     "full-test": "./scripts/full-test",
-
     "watch": "./scripts/watch"
   },
   "author": "Alexander Martin",
@@ -28,18 +25,27 @@
     "mocha": "^2.3.2",
     "node-sass": "^3.3.2",
     "nodemon": "^1.5.0",
+    "react-tools": "^0.13.3",
     "request": "^2.61.0",
+    "sass-loader": "^2.0.1",
     "style-loader": "^0.12.3",
     "uglify-loader": "^1.2.0",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.1"
   },
   "dependencies": {
+    "ampersand-state": "^4.6.0",
+    "ampersand-view": "^8.0.1",
     "async": "^1.4.2",
+    "clone": "^1.0.2",
     "debug": "^2.2.0",
+    "deep-equal": "^1.0.1",
     "express": "^4.13.3",
     "jade": "^1.11.0",
+    "material-ui": "^0.11.0",
     "moment": "^2.10.6",
+    "mysql": "^2.9.0",
+    "node-uuid": "^1.4.3",
     "react": "^0.13.3",
     "react-tap-event-plugin": "^0.1.7",
     "sequelize": "^3.8.0",

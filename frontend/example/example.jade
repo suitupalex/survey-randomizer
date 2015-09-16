@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    title Survey Randomizer Plugin Example
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  body
+    h1 Survey Randomizer Plugin Example
+
+    p Refresh to get a new question.
+
+    p There is a one second delay before the pop up shows up.
+
+    p If you don't have any survey questions, or if you've already answered all
+      | of them, you won't see a question pop up.
+
+    button#reset Click here to reset your answer history.
+
+    script(src='/example.js')
+    script(src=cdn + '/v1/plugin.js')

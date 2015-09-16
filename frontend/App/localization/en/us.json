@@ -1,0 +1,53 @@
+{
+  "creator": {
+    "title": "Survey Creator"
+  , "reports": "Reports"
+  , "save": "Save"
+  , "saved": "Saved"
+  , "unsavedChanges": "Hold on! You've got unsaved changes!"
+  , "reports": {
+      "header": "Reports"
+    , "instructions": "To view reports, simply click on the top left icon."
+    , "link": "Or click right here."
+    }
+  , "inProgress": {
+      "header": "Add a New Question"
+    , "prompt": {
+        "label": "Prompt"
+      , "hint": "What's your question?"
+      }
+    , "answers": {
+        "add": "Add Another Answer"
+      , "label": "Answer #"
+      , "hint": "What's a possible answer?"
+      , "delete": "Delete"
+      }
+    , "add": "Add Question"
+    }
+  , "questions": {
+      "header": "Survey Questions"
+    , "createdAt": {
+        "header": "Created At"
+      , "tooltip": "Time of creation"
+      }
+    , "prompt": {
+        "header": "Prompt"
+      , "tooltip": "The question prompt"
+      }
+    , "answers": {
+        "header": "Answers"
+      , "tooltip": "Possible answers"
+      }
+    , "archive": {
+        "header": "Archive"
+      , "tooltip": "Toggle archiving."
+      , "archive": "Archive"
+      , "unarchive": "Unarchive"
+      }
+    }
+  }
+, "reports": {
+    "title": "Survey Reports"
+  , "noRefresh": "No need to refresh! These reports are live updating."
+  }
+}
